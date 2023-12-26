@@ -30,6 +30,21 @@ $(function(){
         arrows:true
     })//
 
+    //section4 슬릭
+    $(".s4_left_move").slick({
+        autoplay:true,
+        dots:true,
+        arrows:false,
+        slidesToScroll:2,
+        // autoplaySpeed:2000
+    })//
+
+
+    //sns탭 영역
+    $(".section5_inner ul li").click(function(e){
+        e.preventDefault();
+        $(".section5_inner ul li").toggleClass("on")
+    })//click
 
 
 })// jQuery
